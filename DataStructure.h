@@ -43,14 +43,14 @@ class StringPractice
 		string reverseString(string s);
 };
 
-class Array
+class ArrayPractice
 {
 	public:
 		int firstDuplicate(vector<int> a);
 		char firstNotRepeatingCharacter(string s);
 };
 
-class LinkedList
+class LinkedListPractice
 {
 	public:
 		ListNode<int> * removeKFromList(ListNode<int> * l, int k);
@@ -60,7 +60,7 @@ class LinkedList
 		ListNode<int> * InsertTail(int length);
 };
 
-class HashTable
+class HashTablePractice
 {
 	public:
 		vector<vector<string>> groupingDishes(vector<vector<string>> dishes);

@@ -14,7 +14,7 @@ return it->first;
 }
 */
 
-int Array::firstDuplicate(vector<int> a) {
+int ArrayPractice::firstDuplicate(vector<int> a) {
 	map<int, int> myMap;
 	int i = 0;
 
@@ -32,7 +32,7 @@ int Array::firstDuplicate(vector<int> a) {
 }
 
 
-char Array::firstNotRepeatingCharacter(string s) {
+char ArrayPractice::firstNotRepeatingCharacter(string s) {
 
 	map<char, int> myMap;
 

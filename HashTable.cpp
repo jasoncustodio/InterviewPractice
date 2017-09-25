@@ -4,7 +4,7 @@
 	Group dishes based on the same ingredient
 */
 
-vector<vector<string>> HashTable::groupingDishes(vector<vector<string>> dishes)
+vector<vector<string>> HashTablePractice::groupingDishes(vector<vector<string>> dishes)
 {
 	map<string, vector<string>>::iterator it;
 	vector<vector<string>> returnDish;
@@ -57,7 +57,7 @@ vector<vector<string>> HashTable::groupingDishes(vector<vector<string>> dishes)
 	Find pattern based on the input string, return a bool
 */
 
-bool HashTable::areFollowingPatterns(vector<string> strings, vector<string> patterns)
+bool HashTablePractice::areFollowingPatterns(vector<string> strings, vector<string> patterns)
 {
 	map<string, string> check;
 	map<string, string> checkString;
@@ -109,7 +109,7 @@ bool HashTable::areFollowingPatterns(vector<string> strings, vector<string> patt
 //	return false;
 //}
 
-bool HashTable::containsCloseNums(vector<int> nums, int k)
+bool HashTablePractice::containsCloseNums(vector<int> nums, int k)
 {
 	map<int, int> count;
 	map<int, int> index;
@@ -128,7 +128,7 @@ bool HashTable::containsCloseNums(vector<int> nums, int k)
 	return false;
 }
 
-bool HashTable::containsCloseNums2(vector<int> nums, int k) 
+bool HashTablePractice::containsCloseNums2(vector<int> nums, int k)
 {
 	unordered_map<int, int> cnt;
 

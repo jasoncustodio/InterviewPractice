@@ -7,10 +7,6 @@ int main()
 
 	cout << s;
 
-	*s = 'N';
-
-	cout << s;
-
 	return 0;
 }
 

@@ -5,7 +5,7 @@
 	return the new list.
 */
 
-ListNode<int> * LinkedList::removeKFromList(ListNode<int> * l, int k) 
+ListNode<int> * LinkedListPractice::removeKFromList(ListNode<int> * l, int k)
 {
 	ListNode<int> * head = NULL;
 	ListNode<int> * tail = NULL;
@@ -35,7 +35,7 @@ ListNode<int> * LinkedList::removeKFromList(ListNode<int> * l, int k)
 	Push onto stack, while popping, check if it equals the same.
 */
 
-bool LinkedList::isListPalindrome(ListNode<int> * l)
+bool LinkedListPractice::isListPalindrome(ListNode<int> * l)
 {
 	ListNode<int> * head = NULL;
 	ListNode<int> * current = NULL;
@@ -64,7 +64,7 @@ bool LinkedList::isListPalindrome(ListNode<int> * l)
 	O(n) by reversing the list and checking
 */
 
-bool LinkedList::isListPalindrome2(ListNode<int> * head)
+bool LinkedListPractice::isListPalindrome2(ListNode<int> * head)
 {
 	if (!head || (head && !head->next))			// 0 or 1 items
 		return true;
@@ -87,7 +87,7 @@ bool LinkedList::isListPalindrome2(ListNode<int> * head)
 	return true;
 }
 
-ListNode<int> * LinkedList::reverseList(ListNode<int> * head) {
+ListNode<int> * LinkedListPractice::reverseList(ListNode<int> * head) {
 	ListNode<int> * pre = NULL;
 	ListNode<int> * next = NULL;
 
@@ -100,7 +100,7 @@ ListNode<int> * LinkedList::reverseList(ListNode<int> * head) {
 	return pre;
 }
 
-ListNode<int> * LinkedList::InsertTail(int length)
+ListNode<int> * LinkedListPractice::InsertTail(int length)
 {
 	ListNode<int> * head = NULL;
 	ListNode<int> * tail = NULL;
