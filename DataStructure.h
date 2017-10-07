@@ -23,19 +23,23 @@ using namespace std;
 template<typename T>
 struct ListNode
 {
-	ListNode(const T &v) : value(v), next(0) {}
 	T value;
 	ListNode *next;
+
+	ListNode(const T &v) : value(v), next(nullptr) {}
 };
+
 
 template<typename T>
 struct Tree 
 {
-	Tree(const T &v) : value(v), left(nullptr), right(nullptr) {}
 	T value;
 	Tree *left;
 	Tree *right;
+
+	Tree(const T &v) : value(v), left(nullptr), right(nullptr) {}
 };
+
 
 class StringPractice
 {
@@ -43,12 +47,14 @@ class StringPractice
 		string reverseString(string s);
 };
 
+
 class ArrayPractice
 {
 	public:
 		int firstDuplicate(vector<int> a);
 		char firstNotRepeatingCharacter(string s);
 };
+
 
 class LinkedListPractice
 {
@@ -58,7 +64,9 @@ class LinkedListPractice
 		bool isListPalindrome2(ListNode<int> * head);
 		ListNode<int> * reverseList(ListNode<int> * head);
 		ListNode<int> * InsertTail(int length);
+		int append(ListNode<int> *& head, int data);
 };
+
 
 class HashTablePractice
 {
@@ -69,6 +77,7 @@ class HashTablePractice
 		bool containsCloseNums2(vector<int> nums, int k);
 };
 
+
 class TreePractice
 {
 	public:
@@ -76,5 +85,10 @@ class TreePractice
 		bool isTreeSymmetric(Tree<int> * t1, Tree<int> * t2);
 		bool isTreeSymmetric(Tree<int> * t);
 		string findProfession(int level, int pos);
+
+		void traversal(Tree<int> * t);
+		void inorder(Tree<int> * t);
+		void preorder(Tree<int> * t);
+		void postorder(Tree<int> * t);
 };
 

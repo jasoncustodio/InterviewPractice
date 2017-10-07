@@ -64,5 +64,45 @@ string TreePractice::findProfession(int level, int pos)
 	return (pos % 2) ? "engineer" : "doctor";
 }
 
+/*
+	Different orders of moving through a tree. 
+	Inorder: Flatten inherent sequence.
+	Preorder: Explore roots then leaves.
+	Postorder: Explore all leaves then roots.
+*/
+
+void TreePractice::traversal(Tree<int> * t)
+{
+	inorder(t);
+	preorder(t);
+	postorder(t);
+}
+
+void TreePractice::inorder(Tree<int> * t)
+{
+	if (!t) return;			// Empty base case
+
+	inorder(t->left);		// Left child
+	cout << t->value;		// Root
+	inorder(t->right);		// Right Child
+}
+
+void TreePractice::preorder(Tree<int> * t)
+{
+	if (!t) return;			// Empty base case
+
+	cout << t->value;		// Root
+	preorder(t->left);		// Left child
+	preorder(t->right);		// Right child
+}
+
+void TreePractice::postorder(Tree<int> * t)
+{
+	if (!t) return;			// Empty base case
+
+	postorder(t->left);		// Left child
+	postorder(t->right);	// Right child
+	cout << t->value;		// Root
+}
 
 

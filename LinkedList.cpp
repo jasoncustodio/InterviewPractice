@@ -102,8 +102,8 @@ ListNode<int> * LinkedListPractice::reverseList(ListNode<int> * head) {
 
 ListNode<int> * LinkedListPractice::InsertTail(int length)
 {
-	ListNode<int> * head = NULL;
-	ListNode<int> * tail = NULL;
+	ListNode<int> * head = nullptr;
+	ListNode<int> * tail = nullptr;
 
 	for (int i = 0; i < length; ++i)
 	{
@@ -118,4 +118,16 @@ ListNode<int> * LinkedListPractice::InsertTail(int length)
 		}
 	}
 	return head;
+}
+
+int LinkedListPractice::append(ListNode<int> *& head, int data)
+{
+	if (!head)
+	{
+		head = new ListNode<int>(data);
+		head->next = nullptr;
+		return 1;
+	}
+
+	return append(head->next, data);
 }

@@ -3,9 +3,15 @@
 
 int main()
 {
-	char * s = "Fine";
+	ListNode<int> * head = nullptr;
 
-	cout << s;
+	LinkedListPractice driver;
+
+	driver.append(head, 1);
+	driver.append(head, 2);
+
+	for (head; head; head = head->next)
+		cout << head->value;
 
 	return 0;
 }

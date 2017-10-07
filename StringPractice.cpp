@@ -17,3 +17,12 @@ string StringPractice::reverseString(string s) {
 
 	return s;
 }
+
+template<typename F>
+struct Poop
+{
+	F value;
+	Poop * next;
+
+	Poop(const &F) : value(F), next(nullptr) {}
+};
